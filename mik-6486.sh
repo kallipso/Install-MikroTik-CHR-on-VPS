@@ -7,7 +7,7 @@ echo "=== MikroTik 6 Installer ==="
 echo
 sleep 3
 
-wget http://www.mikrotik-software.de/downloads/chr-6.46.7.img.zip -O chr.img.zip  && \
+wget http://www.mikrotik-software.de/downloads/chr-6.48.6.img.zip -O chr.img.zip  && \
 gunzip -c chr.img.zip > chr.img  && \
 mount -o loop,offset=512 chr.img /mnt && \
 STORAGE=`lsblk | grep disk | cut -d ' ' -f 1 | head -n 1` && \
